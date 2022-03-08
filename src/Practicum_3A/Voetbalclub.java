@@ -1,5 +1,7 @@
 package Practicum_3A;
 
+import java.util.Objects;
+
 public class Voetbalclub {
 
     private String naam;
@@ -9,7 +11,7 @@ public class Voetbalclub {
 
     public Voetbalclub(String enteredName){
         naam = enteredName;
-        if (enteredName == null | enteredName == "")
+        if (enteredName == null | Objects.equals(enteredName, ""))
         {
             naam = "FC";
         }
